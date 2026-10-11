@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "kooperativa": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@kooperativa_team/mcp-server@0.2.2"],
+      "env": {
+        "KOOPERATIVA_API_KEY": "${KOOPERATIVA_API_KEY}"
+      }
+    }
+  }
+}

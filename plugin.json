@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "kooperativa",
+  "version": "1.0.0",
+  "description": "Find and qualify B2B leads with structured people and company data: search, enrich, decision makers, hiring signals and job changes. No email or phone data.",
+  "author": {
+    "name": "Kooperativa",
+    "email": "support@kooperativa.io",
+    "url": "https://kooperativa.io"
+  },
+  "homepage": "https://docs.kooperativa.io",
+  "repository": "https://github.com/kooperativa-team/kooperativa-kiro-power",
+  "license": "MIT",
+  "keywords": [
+    "kooperativa",
+    "lead generation",
+    "b2b data",
+    "prospecting",
+    "sales",
+    "decision makers",
+    "company search",
+    "people search",
+    "enrichment",
+    "hiring signals",
+    "job changes",
+    "target accounts",
+    "icp"
+  ]
+}
