@@ -4,7 +4,13 @@
     "kooperativa": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@kooperativa_team/mcp-server@0.3.0"]
+      "args": [
+        "-y",
+        "@kooperativa_team/mcp-server@0.3.1"
+      ],
+      "env": {
+        "KOOPERATIVA_MCP_TOOLSET": "read"
+      }
     }
   }
 }
