@@ -8,7 +8,7 @@ Kooperativa returns structured people and company records: work history, educati
 
 | Part | What it does |
 |---|---|
-| `mcp.json` | Starts `@kooperativa_team/mcp-server` (24 tools) over stdio, pinned to an exact version |
+| `mcp.json` | Starts `@kooperativa_team/mcp-server` (24 tools) over stdio, pinned to an exact version. It contains no key and no `env` block |
 | `skills/kooperativa-lead-generation` | A workflow for ICP-based lead lists: confirm the inputs, search, shortlist, enrich, report honestly |
 | `skills/setup` | Connection and troubleshooting guidance |
 
@@ -27,9 +27,17 @@ For a local copy, clone this repository and use **Import power from a folder**. 
 
 ## Configure the API key
 
-Set `KOOPERATIVA_API_KEY` in the environment Kiro is started from, then restart Kiro. The key is read by the MCP server process and sent only to `https://kooperativa.io/api/v1`.
+Kiro does not expand environment placeholders in a power's `mcp.json`, and a desktop app does not always inherit your shell variables, so the key is stored once by the server itself. In a terminal, run:
 
-Do not paste the key into a chat or commit it to a repository. This package contains no credentials, and `mcp.json` holds only a placeholder reference.
+```bash
+npx -y @kooperativa_team/mcp-server login
+```
+
+It asks for the key with input hidden, checks it against the API, and saves it to `~/.kooperativa/config.json` with mode 600. It prints only your account email and license state. Restart Kiro afterwards.
+
+The server also accepts a real key in the `KOOPERATIVA_API_KEY` environment variable when Kiro is started from a shell that has it set. The key is sent only to `https://kooperativa.io/api/v1`.
+
+Do not paste the key into a chat or commit it to a repository. This package contains no credentials.
 
 ## Costs and safety
 

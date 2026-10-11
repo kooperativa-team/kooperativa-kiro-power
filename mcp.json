@@ -4,10 +4,7 @@
     "kooperativa": {
       "type": "stdio",
       "command": "npx",
-      "args": ["-y", "@kooperativa_team/mcp-server@0.2.2"],
-      "env": {
-        "KOOPERATIVA_API_KEY": "${KOOPERATIVA_API_KEY}"
-      }
+      "args": ["-y", "@kooperativa_team/mcp-server@0.3.0"]
     }
   }
 }
