@@ -13,8 +13,8 @@ Build lead and target-account lists with the Kooperativa MCP server (`@kooperati
 
 ## Requirements
 
-- The Kooperativa MCP server is connected and the user's own API key is available to it as the `KOOPERATIVA_API_KEY` environment variable.
-- If the `kooperativa_*` tools are missing, say so and use the `setup` skill. Never ask the user to paste an API key into the conversation.
+- The Kooperativa MCP server is connected and the user's API key is stored for it (see the `setup` skill).
+- If the `kooperativa_*` tools are missing or report a missing key, say so and use the `setup` skill. Never ask the user to paste an API key into the conversation.
 
 ## When to use it
 
